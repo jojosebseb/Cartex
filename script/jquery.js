@@ -1,8 +1,17 @@
 $('.cartex-checkbox').on('click', function(){
-   console.log("asd");
-   $('.cartex-point').toggleClass('cartex-point-active')
-})
-
+   $('.cartex-point').toggleClass('cartex-point-active');
+});
+$('#login').on('click', function(){
+   $('.login-popup').toggleClass('jquery-show');
+});
+$('#register').on('click', function(){
+   $('.register-popup').toggleClass('jquery-show');
+});
+$('.close-popup').on('click', function(){
+   $('.register-popup').removeClass('jquery-show');
+   $('.login-popup').removeClass('jquery-show');
+   $('.cart-popup').removeClass('jquery-show');
+});
 
 $('.main-slick').slick({
    infinite: true,

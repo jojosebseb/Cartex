@@ -789,7 +789,7 @@ li{
    text-transform: capitalize;
 }
 //cart-popup
-.cart-popup{
+.cart-popup, .login-popup, .register-popup{
    height: 100vh;
    width: 100vw;
    background-color: rgba(191, 191, 191, 0.83);
@@ -797,6 +797,7 @@ li{
    top: 0;
    left: 0;
    z-index: 99;
+   display: none;
 }
 .cart-popup-image{
    width: 150px;
@@ -816,9 +817,9 @@ li{
    display: inline-block;
    color: white;
    position: absolute;
-   top: 30%;
+   top: 50%;
    left: 50%;
-   transform: translateX(-50%);
+   transform: translate(-50%, -50%);
 }
 .cart-popup-desc{
    margin-top: 10px;
@@ -831,4 +832,38 @@ li{
 }
 .green{
    background-color: green;
+}
+
+.popup-left, .popup-right{
+   display: inline-block;
+   margin: 10px;
+   vertical-align: top;
+}
+.popup-input{
+   @extend .cartex-inputs;
+   color: black;
+   height: 30px;
+   padding-top: 5px;
+   padding-left: 5px;
+   width: 200px;
+}
+.tall{
+   height: 100px;
+}
+.forgot-password{
+   padding: 10px 10px;
+   display: inline-block; ;
+   a{
+   font-size: 10px;
+   }
+   a:hover{
+      text-decoration: underline;
+   }
+}
+.close-popup{
+   float: right;
+   cursor: pointer;
+}
+.jquery-show{
+   display: block;
 }
