@@ -346,6 +346,12 @@ li{
 .banner-img{
    background-size: contain;
 }
+.main-banner-div{
+   height: 445px;
+   width: 600px;
+   margin: auto;
+}
+
 .main-content-right{
    width: 30%;
    display: inline-block;
@@ -442,17 +448,35 @@ li{
    background-color: grey;
 }
 .shopdetail-thumb{
-   height: 90px;
-   width: 70px;
+   height: 90px !important;
+   width: 70px !important;
    background-color: grey;
    margin: 0px 10px 10px;
+   cursor: pointer;
+}
+.shopdetail-thumb{
+   img{
+      height: 90px;
+      width: 70px;
+   }
 }
 .shopdetail-left, .shopdetail-right, .shopdetail-thumb-div, .shopdetail-big-img{
    display: inline-block;
    vertical-align: top;
 }
+.shopdetail-thumb-div{
+   height: 400px;
+   width: 80px;
+}
+.shopdetail-left{
+}
 .shopdetail-right{
    margin-left: 10px;
+}
+.slider-for{
+   display: inline-block;
+   height: 400px;
+   width: 280px;
 }
 .idr{
    font-size: 15px;
@@ -798,4 +822,13 @@ li{
 }
 .cart-popup-desc{
    margin-top: 10px;
+}
+.red{
+   background-color: red;
+}
+.blue{
+   background-color: blue;
+}
+.green{
+   background-color: green;
 }
